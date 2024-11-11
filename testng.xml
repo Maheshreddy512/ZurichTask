@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count ="5">
+<listeners>
+<listener class-name="donatekart.funding.Listeners"/>
+
+</listeners>
+
+  <test name="Validating the title of the page">
+    <classes>
+      <class name="donatekart.funding.Title_Page"/>
+    </classes>
+   </test>  
+   
+ <test name="validating the email and password credentials">
+    <classes>
+      <class name="donatekart.funding.Homepage"/>
+    </classes>
+  </test>  
+  
+ 
+  
+</suite> 
